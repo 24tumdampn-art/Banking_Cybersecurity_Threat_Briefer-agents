@@ -1,59 +1,72 @@
 # 🏦 Banking Cybersecurity Threat Briefer
 
-A multi-agent AI system that automatically generates real-time 
+A multi-agent AI system that automatically generates real-time
 cybersecurity threat briefings for banks and financial institutions.
+Click one button — 5 AI agents run automatically and produce a
+full professional threat report in under 60 seconds.
+
+---
 
 ## 🚀 Live Demo
-[Click here to open the app]
-Local URL: http://localhost:8501
-Network URL: http://192.168.43.154:8501
+
+App runs locally using Streamlit.
+To run it yourself follow the steps in the Run Locally section below.
+
+---
+
+## 🎯 Problem Statement
+
+Banks face constant cyber threats including fraud, phishing,
+ransomware, SWIFT attacks, and ATM skimming. Security analysts
+currently spend hours manually researching threats and writing
+compliance reports.
+
+This system reduces that to under 60 seconds using Agentic AI.
+
+**Users:** Bank security officers, IT teams, compliance managers
+
+---
 
 ## 🤖 How It Works
+
 5 AI agents run in sequence automatically:
-1. 🔍 Threat Researcher — searches live banking threats via Tavily
-2. 🛡️ Vulnerability Analyst — identifies CVEs and attack vectors
-3. 📋 Briefing Writer — writes a professional threat report
-4. ⚖️ LLM-as-Judge — scores the report quality out of 10
-5. ✅ Compliance Checker — checks RBI and PCI-DSS compliance gaps
+
+1. 🔍 **Threat Researcher** — searches live banking threats via Tavily
+2. 🛡️ **Vulnerability Analyst** — identifies CVEs and attack vectors
+3. 📋 **Briefing Writer** — writes a professional structured threat report
+4. ⚖️ **LLM-as-Judge** — scores the report quality out of 10
+5. ✅ **Compliance Checker** — checks RBI and PCI-DSS compliance gaps
+
+Each agent passes its output to the next automatically.
+No human involvement needed between steps.
+
+---
+
+## 📊 What The Output Includes
+
+- Executive Summary with risk level — CRITICAL / HIGH / MEDIUM
+- Active threats with CVE numbers and severity ratings
+- 5 actionable mitigation steps for the security team
+- LLM Judge score out of 10 — Accuracy, Completeness, Actionability
+- RBI compliance score out of 100
+- PCI-DSS compliance score out of 100
+- Interactive charts — radar, bar, gauge, donut
+
+---
 
 ## 🛠️ Tech Stack
-- Python
-- Streamlit
-- Groq API (Llama 3.3 70B)
-- Tavily Search API
-- Plotly
+
+| Tool | Purpose |
+|---|---|
+| Python | Main programming language |
+| Streamlit | Web UI framework |
+| Groq API — Llama 3.3 70B | AI brain for Agents 2, 3, 4, 5 |
+| Tavily Search API | Live internet search for Agent 1 |
+| Plotly | Interactive graphs and charts |
+| python-dotenv | Secure API key management |
+
+---
 
 ## ⚙️ Run Locally
 
-1. Clone the repo
-   git clone https://github.com/YOUR_USERNAME/banking-threat-briefer
-
-2. Install dependencies
-   pip install -r requirements.txt
-
-3. Create .env file
-   GROQ_API_KEY=your_key_here
-   TAVILY_API_KEY=your_key_here
-
-4. Run the app
-   streamlit run app.py
-
-## 📁 Project Structure
-banking-threat-briefer/
-├── app.py                  # Main UI and agent orchestration
-├── agents/
-│   ├── researcher.py       # Agent 1 — Tavily live search
-│   ├── analyst.py          # Agent 2 — CVE identification
-│   ├── writer.py           # Agent 3 — Report generation
-│   ├── judge.py            # Agent 4 — LLM-as-Judge scoring
-│   └── compliance.py       # Agent 5 — RBI + PCI-DSS checker
-├── requirements.txt
-└── Procfile
-
-## 👥 Team
-- Role A (Architect) — Problem definition, architecture, API integrations
-- Role B (Builder) — Implementation, UI, deployment
-
-## 📚 Course
-Semester IV · B.E. Electronics & Communication
-Introduction to Agentic AI Systems
+**Step 1 — Clone the repo**
