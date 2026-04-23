@@ -70,3 +70,13 @@ No human involvement needed between steps.
 ## ⚙️ Run Locally
 
 **Step 1 — Clone the repo**
+
+
+## 🏗️ Architecture Diagram
+
+![Architecture](<img width="675" height="903" alt="architecture png" src="https://github.com/user-attachments/assets/878db56c-43dc-4d85-ab29-1d4b0c7484f4" />
+)
+
+**Flow:**
+User → Streamlit UI → Agent 1 (Tavily Search) → Agent 2 (Groq Analyst)
+→ Agent 3 (Groq Writer) → Agent 4 (LLM Judge) → Agent 5 (Compliance) → Output
