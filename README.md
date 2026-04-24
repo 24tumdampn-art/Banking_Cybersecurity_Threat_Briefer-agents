@@ -1,4 +1,4 @@
-# 🏦 Banking Cybersecurity Threat Briefer
+<img width="1919" height="973" alt="Screenshot 2026-04-24 190555" src="https://github.com/user-attachments/assets/05e16b8a-bbb3-42b4-af5b-fa93c74c73a1" /># 🏦 Banking Cybersecurity Threat Briefer
 
 A multi-agent AI system that automatically generates real-time
 cybersecurity threat briefings for banks and financial institutions.
@@ -74,7 +74,7 @@ No human involvement needed between steps.
 
 ## 🏗️ Architecture Diagram
 
-![Architecture](<img width="675" height="903" alt="architecture png" src="https://github.com/user-attachments/assets/878db56c-43dc-4d85-ab29-1d4b0c7484f4" />
+![Architecture](<img width="1919" height="973" alt="Screenshot 2026-04-24 190555" src="https://github.com/user-attachments/assets/f8478634-b617-4d7d-a6e5-3d29f4b9e0d8" />
 )
 
 **Flow:**
